@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Laparet</title>
+   <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+   <link href="css/style.css?v=435465765756756756799992343432432411176867867" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+   <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+   <script type="text/javascript" src="js/jquery.validate.methods.js"></script>
+   <script type="text/javascript" src="js/jquery.validate.messages.js"></script>
+   <script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script>
+   <script id="js-ymaps" src="https://api-maps.yandex.ru/2.1/?apikey=8e9adecc-60f3-4087-8177-d8020b3efdf0&lang=ru_RU"></script>
+   <script type="text/javascript" src="js/script.js?v=32432432439809809809809999999341111324"></script>
+</head>
+
+<body>
+   <div class="record " id="record-popup-one">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-big" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title record-title-self-end">
+                  Запись<br> на бесплатный дизайн-проект
+               </div>
+            </div>
+            <div class="record-content record-content-padding">
+               <div
+                  class="record-content-block record-content-block-li record-content-block-box-shadow record-content-block-radius">
+                  <ul>
+                     <li>
+                        <a href="#record-popup-city" class="js-hadler-btn ic-link">
+                           <span class="record-content-image">
+                              <img src="img/geo.svg" />
+                           </span>
+                           <span>Выберите город</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#record-popup-store" class="js-hadler-btn ic-link">
+                           <span class="record-content-image">
+                              <img src="img/group.svg" />
+                           </span>
+                           <span>Выбрать магазин</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#record-popup-designer" class="js-hadler-btn ic-link">
+                           <span class="record-content-image">
+                              <img src="img/user.svg" />
+                           </span>
+                           <span>Выбрать дизайнера</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <a href="#record-popup-feedback" class="record-content-button record-content-button--gray js-hadler-btn recording-phone-btn">
+                  Записаться по телефону
+               </a>
+               
+            </div>
+
+            <div class="record-copy record-footer">
+               © 2021, LAPARET
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ///// -->
+
+   <div class="record d-none" id="record-popup-city">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-min" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title text-center record-title-center">
+                  Выберите<br> город
+               </div>
+            </div>
+
+
+
+            <div class="record-content">
+               <div class="record-content-block record-content-padding record-content-block-100">
+                  <div class="record-content-block-search">
+                     <div class="record-content-block-search-button">
+                        <button type="submit" name="s" value="Найти">
+                           <img src="img/search.svg" />
+                        </button>
+                     </div>
+                     <div class="record-content-block-search-input record-content-block-search-border">
+                        <input type="text" size="20" maxlength="50" autocomplete="off" placeholder="Найти город"
+                           name="q" />
+                     </div>
+                  </div>
+
+
+                  <ul class="cities-list">
+                     <li>
+                        <a href="#" class="cty">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Москва</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Краснодар</span>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="cty">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Смоленск</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Симферополь</span>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="cty">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Кострома</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Череповец</span>
+                        </a>
+                     </li>
+
+
+                     <li>
+                        <a href="#" class="cty">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Сочи</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Санкт-Петербург</span>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="cty">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Видное</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Саратов</span>
+                        </a>
+                     </li>
+
+
+                     <li>
+                        <a href="#" class="cty">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Нижний-Новгород</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="record-content-image">
+                              <img src="img/location.svg" />
+                           </span>
+                           <span>Иваново</span>
+                        </a>
+                     </li>
+                     
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ///// -->
+
+   <div class="record d-none" id="record-popup-store">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-min" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title text-center record-title-center">
+                  Выберите<br> магазин
+               </div>
+            </div>
+            <ul class="tabs__caption record-tab record-tab-center">
+               <li class="active"><a class="js-tab-hadler-btn" href="#tablist">Список</a></li>
+               <li><a class="js-tab-hadler-btn" href="#tabmaps">На карте</a></li>
+            </ul>
+            <div class="tabs__content record-content record-content-store-padding" id="tablist">
+               <div
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius">
+                  <div class="record-content-block-search">
+                     <div class="record-content-block-search-button">
+                        <button type="submit" name="s" value="Найти">
+                           <img src="img/search.svg" />
+                        </button>
+                     </div>
+                     <div class="record-content-block-search-input">
+                        <input type="text" size="20" maxlength="50" autocomplete="off" placeholder="Найти магазин"
+                           name="q" />
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius record-store-block-xs">
+                  <div class="record-content-title">Тессер на курской</div>
+                  <div class="record-content-address">г. Москва, наб. Академика Туполева, д. 3</div>
+                  <div class="record-content-maps">
+                     <div class="store-map" id="storeMap1">
+
+                     </div>
+
+                     <script>
+
+                        (function() {
+                           
+                           ymaps.ready(init);
+
+                           function init () {
+
+                              const storeMap = new ymaps.Map("storeMap1", {
+                                 center: [43.473556, 131.929251],
+                                 zoom: 16,
+                                 controls: []
+                                 }, {
+                                 searchControlProvider: 'yandex#search'
+                                 }),
+                                 myPlacemark = new ymaps.Placemark(storeMap.getCenter(), {
+                                       hintContent: 'Адрес магазина',
+                                       balloonContent: 'Адрес магазина'
+                                 }, {
+                                       iconLayout: 'default#image',
+                                       iconImageHref: 'img/loc.svg',
+                                       iconImageSize: [35, 43],
+                                       iconImageOffset: [-15, -32]
+                                 });
+                                 storeMap.geoObjects.add(myPlacemark); 
+                           } 
+
+                        })()
+                        
+                     </script>
+                  </div>
+                  <div class="record-content-time">
+                     <span>Ближайшее время для записи</span>
+                     <span><img src="img/clock.svg" /> 27 сентября в 10:00</span>
+                  </div>
+                  <div class="record-content-choose-store record-content-button record-content-button-border">
+                     Выбрать магазин
+                  </div>
+               </div>
+               <div 
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius record-store-block-xs">
+                  <div class="record-content-title">Тессер на курской</div>
+                  <div class="record-content-address">г. Москва, наб. Академика Туполева, д. 3</div>
+                  <div class="record-content-maps">
+                     <div class="store-map" id="storeMap2">
+
+                     </div>
+
+                     <script>
+
+                        (function() {
+                           
+                           ymaps.ready(init);
+
+                           function init () {
+
+                              const storeMap = new ymaps.Map("storeMap2", {
+                                 center: [43.473556, 131.929251],
+                                 zoom: 16,
+                                 controls: []
+                                 }, {
+                                 searchControlProvider: 'yandex#search'
+                                 }),
+                                 myPlacemark = new ymaps.Placemark(storeMap.getCenter(), {
+                                       hintContent: 'Адрес магазина',
+                                       balloonContent: 'Адрес магазина'
+                                 }, {
+                                       iconLayout: 'default#image',
+                                       iconImageHref: 'img/loc.svg',
+                                       iconImageSize: [35, 43],
+                                       iconImageOffset: [-15, -32]
+                                 });
+                                 storeMap.geoObjects.add(myPlacemark); 
+                           } 
+
+                        })()
+                        
+                     </script>
+                  </div>
+                  <div class="record-content-time">
+                     <span>Ближайшее время для записи</span>
+                     <span><img src="img/clock.svg" /> 27 сентября в 10:00</span>
+                  </div>
+                  <div class="record-content-choose-store record-content-button record-content-button-border">
+                     Выбрать магазин
+                  </div>
+               </div>
+            </div>
+            <div class="tabs__content record-content record-content-maps" id="tabmaps" style="display: none;">
+               <div id="stores-big-map" class="stores-big-map">
+
+               </div>
+
+               <div class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius block-absolute">
+                  <div class="record-content-block-search">
+                     <div class="record-content-block-search-button">
+                        <button type="submit" name="s" value="Найти">
+                           <img src="img/search.svg" class="mCS_img_loaded">
+                        </button>
+                     </div>
+                     <div class="record-content-block-search-input">
+                        <input type="text" size="20" maxlength="50" autocomplete="off" placeholder="Найти магазин" name="q">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="store-modal js-store-modal modal">
+                     <button class="close-modal">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4052 16.0575L22.0101 22.6623L23.4243 21.2481L16.8194 14.6433L23.3144 8.14828L21.9002 6.73406L15.4052 13.229L8.66727 6.49107L7.25305 7.90529L13.991 14.6433L7.14319 21.4911L8.5574 22.9053L15.4052 16.0575Z" fill="#BDBDBD"/>
+                        </svg>
+                     </button>
+
+
+                     <div class="store-name js-store-name">АБВ Дизайн</div>
+                     <div class="store-descr js-store-adress">г. Москва, 0 км МКАД. а/м. Москва-Нижний Новгород , владение 19., павильон 2ф4 (1 этаж). Строительный рынок ТК «Владимирский тракт» </div>
+
+                     <div class="delivery-time-box">
+                        <strong>Ближайшее время для записи</strong>
+                        <div class="d-time">
+                           <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2_1317)">
+                              <path d="M8 0.5C3.58888 0.5 0 4.08888 0 8.5C0 12.9111 3.58888 16.5 8 16.5C12.4111 16.5 16 12.9111 16 8.5C16 4.08888 12.4111 0.5 8 0.5ZM8 15.5C4.14013 15.5 1 12.3599 1 8.5C1 4.64013 4.14013 1.5 8 1.5C11.8599 1.5 15 4.64013 15 8.5C15 12.3599 11.8599 15.5 8 15.5Z" fill="black"/>
+                              <path d="M8.5 3.50002H7.5V8.70703L10.6465 11.8535L11.3535 11.1465L8.5 8.29297V3.50002Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_2_1317">
+                              <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                              </clipPath>
+                              </defs>
+                           </svg>
+                           <span class="js-store-time">27 сентября в 10:00</span>
+                        </div>
+                     </div>
+
+                     <div class="record-content-choose-store record-content-button record-content-button-border">
+                        Выбрать магазин
+                     </div>
+               </div>
+            </div>
+         </div>   
+      </div>
+   </div>
+
+   <!-- ///// -->
+
+   <div class="record d-none" id="record-popup-designer">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-min" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title text-center record-title-center">
+                  Выберите<br> дизайнера
+               </div>
+            </div>
+            <ul class="record-tab">
+               <li><a href="#record-popup-store" style="font-size: 17px;">Изменить магазин <img src="img/next.svg"></a></li>
+            </ul>
+            <div class="record-content record-content-store-padding">
+               <div
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius record-content-block-designer">
+                  <div class="manager-block">
+                     <div class="manager-block-face">
+                        <img src="img/best.svg" />
+                     </div>
+                     <div class="manager-block-info">
+                        <div class="manager-block-name">Лучший дизайнер по рейтингу</div>
+                        <div class="manager-block-salon">Салон Тессер на Курской</div>
+                        <div class="manager-block-rating">
+                           <ul class="raiting-list">
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#record-popup-time" class="record-content-choose-store record-content-button record-content-button-border js-hadler-btn">
+                     Выбрать дизайнера автоматически
+                  </a>
+               </div>
+               <div
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius record-content-block-designer">
+                  <div class="manager-block">
+                     <div class="manager-block-face">
+                        <img src="img/Vector.png" />
+                     </div>
+                     <div class="manager-block-info">
+                        <div class="manager-block-name">Бугрецов Владимир</div>
+                        <div class="manager-block-salon">Салон Тессер на Курской</div>
+                        <div class="manager-block-rating">
+                           <ul class="raiting-list">
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                                 </svg>
+                              </li>
+                           </ul>
+
+                           <span class="raiting-count">45 (<a href="#">16 отзывов</a>)</span>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#record-popup-time" class="record-content-choose-store record-content-button record-content-button-border js-hadler-btn">
+                     Выбрать дизайнера
+                  </a>
+               </div>
+
+
+               <div
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius record-content-block-designer">
+                  <div class="manager-block">
+                     <div class="manager-block-face">
+                        <img src="img/Vector.png" />
+                     </div>
+                     <div class="manager-block-info">
+                        <div class="manager-block-name">Бугрецов Владимир</div>
+                        <div class="manager-block-salon">Салон Тессер на Курской</div>
+                        <div class="manager-block-rating">
+                           <ul class="raiting-list">
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                                 </svg>
+                              </li>
+                           </ul>
+
+                           <span class="raiting-count">45 (<a href="#">16 отзывов</a>)</span>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#record-popup-time" class="record-content-choose-store record-content-button record-content-button-border js-hadler-btn">
+                     Выбрать дизайнера
+                  </a>
+               </div>
+
+
+
+               <div
+                  class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius record-content-block-designer">
+                  <div class="manager-block">
+                     <div class="manager-block-face">
+                        <img src="img/Vector.png" />
+                     </div>
+                     <div class="manager-block-info">
+                        <div class="manager-block-name">Бугрецов Владимир</div>
+                        <div class="manager-block-salon">Салон Тессер на Курской</div>
+                        <div class="manager-block-rating">
+                           <ul class="raiting-list">
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                                 </svg>
+                              </li>
+                           </ul>
+
+                           <span class="raiting-count">45 (<a href="#">16 отзывов</a>)</span>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#record-popup-time" class="record-content-choose-store record-content-button record-content-button-border js-hadler-btn">
+                     Выбрать дизайнера
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ///// -->
+
+   <div class="record d-none" id="record-popup-time">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-min" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title text-center record-title-center">
+                  Выберите<br> дату и время
+               </div>
+            </div>
+            <ul class="record-tab record-tab-border">
+               <li><a href="#record-popup-store">Изменить магазин / дизайнера <img src="img/next.svg"></a></li>
+            </ul>
+            <div class="record-content">
+               <div class="record-content-block record-content-block-100 record-content-block-padding">
+                  
+
+                  <div class="calendar">
+
+
+                     <div class="calendar-head">
+                        <div class="dt">
+                           <strong data-target="day-num">24</strong>
+                           <p>
+                              <span data-target="day-name">Четверг</span>
+                              <span data-target="day-month">Октябрь 2021</span>
+                           </p>
+                        </div>
+
+
+                        <div class="calendar-nav">
+                           <button class="calendar-nav-btn calendar-prev">
+                              <svg width="17" height="31" viewBox="0 0 17 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M15.0302 1L1 15.0302L15.0302 29.0605" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                           </button>
+                           <button class="calendar-nav-btn  calendar-next">
+                              <svg width="17" height="31" viewBox="0 0 17 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1.42752 1L15.4578 15.0302L1.42752 29.0605" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                  <div class="calendar-dates">
+                     <ul>
+                        <li>
+                           <button class="calendar-date calendar-tab" data-tab-id="1" data-day-week="Понедельник" data-month="Октябрь 2021" data-day-num="21">
+                              <span>Пн</span>
+                              <strong>21</strong>
+                           </button>
+                        </li>
+
+                        <li>
+                           <button class="calendar-date calendar-tab" data-tab-id="2" data-day-week="Вторник" data-month="Октябрь 2021" data-day-num="22">
+                              <span>Вт</span>
+                              <strong>22</strong>
+                           </button>
+                        </li>
+
+                        <li>
+                           <button class="calendar-date calendar-tab" data-tab-id="3" data-day-week="Среда" data-month="Октябрь 2021" data-day-num="23">
+                              <span>Ср</span>
+                              <strong>23</strong>
+                           </button>
+                        </li>
+
+                        <li>
+                           <button class="calendar-date calendar-tab active" data-tab-id="4" data-day-week="Четверг" data-month="Октябрь 2021" data-day-num="24">
+                              <span>Чт</span>
+                              <strong>24</strong>
+                           </button>
+                        </li>
+
+                        <li>
+                           <button class="calendar-date calendar-tab" data-tab-id="5" data-day-week="Пятница" data-month="Октябрь 2021" data-day-num="25">
+                              <span>Пт</span>
+                              <strong>25</strong>
+                           </button>
+                        </li>
+
+                        <li>
+                           <button class="calendar-date calendar-tab" data-tab-id="6" data-day-week="Суббота" data-month="Октябрь 2021" data-day-num="26">
+                              <span>Сб</span>
+                              <strong>26</strong>
+                           </button>
+                        </li>
+
+                        <li>
+                           <button class="calendar-date calendar-tab" data-tab-id="7" data-day-week="Воскресенье" data-month="Октябрь 2021" data-day-num="27">
+                              <span>Вс</span>
+                              <strong>27</strong>
+                           </button>
+                        </li>
+                     </ul>
+                  </div>
+                  
+
+                  <div class="calendar-content">
+                     <div class="calendar-content-tab" data-tab-content-id="1">
+                        <ul class="timetable">
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">15:00–16:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">16:00–17:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">17:00–18:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">18:00–19:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">19:00–20:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">20:00–21:00</div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="calendar-content-tab" data-tab-content-id="2">
+                        <ul class="timetable">
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">15:00–16:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">16:00–17:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">17:00–18:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">18:00–19:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">19:00–20:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">20:00–21:00</div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="calendar-content-tab" data-tab-content-id="3">
+                        <ul class="timetable">
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">15:00–16:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">16:00–17:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">17:00–18:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">18:00–19:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">19:00–20:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">20:00–21:00</div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="calendar-content-tab active" data-tab-content-id="4">
+                        <ul class="timetable">
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">15:00–16:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">16:00–17:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">17:00–18:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">18:00–19:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">19:00–20:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">20:00–21:00</div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="calendar-content-tab" data-tab-content-id="5">
+                        <ul class="timetable">
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">15:00–16:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">16:00–17:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">17:00–18:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">18:00–19:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">19:00–20:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">20:00–21:00</div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="calendar-content-tab" data-tab-content-id="6">
+                        <div class="empty-alert">
+                           Запись на эту дату недоступна
+                        </div>
+                     </div>
+
+
+                     <div class="calendar-content-tab" data-tab-content-id="7">
+                        <ul class="timetable">
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">9:00–10:00</div>
+                              </div>
+                              
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">10:00–11:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">11:00–12:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">12:00–13:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">13:00–14:00</div>
+                              </div>
+                              
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">14:00–15:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">15:00–16:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">16:00–17:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">17:00–18:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">18:00–19:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">19:00–20:00</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="input-time">
+                                 <input type="radio" name="time">
+
+                                 <div class="time-mask">20:00–21:00</div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+         </div>   
+      </div>
+   </div>
+
+   <!-- ///// -->
+
+   <div class="record d-none" id="record-popup-bid">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-min" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title text-center record-title-center">
+                  Оформление<br> заявки
+               </div>
+            </div>
+            <ul class="record-tab record-tab-border">
+               <li><a href="#record-popup-store">Изменить магазин / дизайнера / дату <img src="img/next.svg"></a></li>
+            </ul>
+            <div class="record-content bid-content">
+               <div class="record-content-block record-content-block-100 record-content-store-padding">
+                  <div class="record-content-block-details">Детали заявки</div>
+                  <div class="record-content-block-details-info">
+                     <ul>
+                        <li>
+                           <span class="record-content-image">
+                              <img src="img/city.svg" />
+                           </span>
+                           <span>
+                              <div class="record-content-block-name">Тессер на Курской</div>
+                              <div class="record-content-block-address">г. Москва, наб. Академика Туполева, д. 3</div>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="record-content-image">
+                              <img src="img/user.svg" />
+                           </span>
+                           <span>
+                              <div class="record-content-block-name">Бугрецов Владимир</div>
+                              <div class="record-content-block-address">дизайнер</div>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="record-content-image">
+                              <img src="img/time.svg" />
+                           </span>
+                           <span>
+                              <div class="record-content-block-name">10 октября</div>
+                              <div class="record-content-block-address">14:00–15:00</div>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="record-content-block-details-form">
+                     <form class="form" name="record">
+                        <div class="form-body">
+                           <div data-sid="NAME" class="form-group animated-labels">
+                              <label for="_NAME"><span>Имя&nbsp;<span class="required-star">*</span></span></label>
+                              <div class="input">
+                                 <input type="text" id="_NAME" data-sid="NAME" name="NAME" placeholder="Ваше имя"
+                                    required />
+                              </div>
+                           </div>
+                           <div data-sid="PHONE" class="form-group animated-labels">
+                              <label for="_PHONE"><span>Телефон&nbsp;<span class="required-star">*</span></span></label>
+                              <div class="input">
+                                 <input class="phone" type="tel" id="_PHONE" data-sid="PHONE" name="PHONE"
+                                    placeholder="Ваш телефон" required />
+                              </div>
+                           </div>
+                           <div data-sid="EMAIL" class="form-group animated-labels">
+                              <label for="_EMAIL"><span>E-mail</span></label>
+                              <div class="input">
+                                 <input class="email" type="text" id="_EMAIL" data-sid="EMAIL" placeholder="Ваш email"
+                                    name="EMAIL" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-footer">
+                           <!-- <div class="licence_block">
+                              <input type="checkbox" id="licenses_popup" checked="" name="licenses_popup" required=""
+                                 value="Y">
+                              <label for="licenses_popup">Я принимаю <a href="/include/licenses_detail.php"
+                                    target="_blank">условия пользовательского соглашения</a></label>
+                                 
+                           </div> -->
+
+                           <div class="check-block">
+                              <div class="checkbox">
+                                <input type="checkbox" id="licenses_popup" name="licenses_popup" required="" value="Y">
+                                <div class="checkbox-mask"><img src="img/check.svg" alt="#"></div>
+                              </div>
+                              <label for="licenses_popup">Я принимаю <a href="/include/licenses_detail.php"
+                                    target="_blank">условия пользовательского соглашения</a></label>
+                            </div>
+
+                           <div class="form-submit">
+                              <input type="submit" value="Записаться" name="form-submit" />
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- ///// -->
+
+   <div class="record d-none" id="record-popup-finish">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-big" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title record-title-self-end">
+                  Вы записаны <br>на бесплатный дизайн-проект
+               </div>
+            </div>
+            <div class="record-content record-content-padding">
+               <div
+                  class="record-content-block record-content-block-li record-content-block-box-shadow record-content-block-radius">
+                  <ul>
+                     <li>
+                        <span class="record-content-image">
+                           <img src="img/city.svg" />
+                        </span>
+                        <span>
+                           <div class="record-content-block-finish-name">Тессер на Курской</div>
+                           <div class="record-content-block-finish-address">г. Москва, наб. Академика Туполева, д. 3</div>
+                        </span>
+                     </li>
+                     <li>
+                        <span class="record-content-image">
+                           <img src="img/user.svg" />
+                        </span>
+                        <span>
+                           <div class="record-content-block-finish-name">Бугрецов Владимир</div>
+                           <div class="record-content-block-finish-address">дизайнер</div>
+                        </span>
+                     </li>
+                     <li>
+                        <span class="record-content-image">
+                           <img src="img/time.svg" />
+                        </span>
+                        <span>
+                           <div class="record-content-block-finish-name">10 октября</div>
+                           <div class="record-content-block-finish-address">14:00–15:00 </div>
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <a href="#" class="record-content-button record-content-button-border">
+                  Хорошо
+               </a>
+               
+            </div>
+
+            <div class="record-copy">
+               © 2021, LAPARET
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- ///// -->
+
+
+   <div class="record d-none" id="record-popup-feedback">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-big" style="background-image: url('img/laptop-one.png')"></div>
+               <div class="record-title record-title-self-end">
+                  Заказать <br>обратный звонок
+               </div>
+            </div>
+            <div class="record-content">
+               <div class="record-content-block record-content-block-100 record-content-store-padding">
+                  <div class="record-content-block-details-form record-content-block-details-form-top-none record-popup-feedback-content">
+                     <form class="form" name="feedback">
+                        <div class="form-body">
+                           <div data-sid="NAME" class="form-group animated-labels">
+                              <label for="_NAME"><span>Имя&nbsp;<span class="required-star">*</span></span></label>
+                              <div class="input">
+                                 <input type="text" id="_NAME" data-sid="NAME" name="NAME" placeholder="Ваше имя"
+                                    required />
+                              </div>
+                           </div>
+                           <div data-sid="PHONE" class="form-group animated-labels">
+                              <label for="_PHONE"><span>Телефон&nbsp;<span class="required-star">*</span></span></label>
+                              <div class="input">
+                                 <input class="phone" type="tel" id="_PHONE" data-sid="PHONE" name="PHONE"
+                                    placeholder="Ваш телефон" required />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-footer">
+                           <div class="form-submit">
+                              <input type="submit" value="Заказать звонок" name="form-submit" />
+                           </div>
+                           <div class="form-licence">
+                              Нажимая на кнопку «Заказать звонок», <br>вы даёте <a href="#">согласие на обработку</a> своих
+                              персональных данных
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </div>
+
+
+   <!-- ///// -->
+
+ 
+   <div class="record d-none" id="record-popup-designer-recall">
+      <span class="jqmClose">
+         <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+            <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+               d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+               transform="translate(-1001 -946)"></path>
+         </svg>
+      </span>
+
+
+      <div class="record-content-container">
+         <div class="record-content-container-inner">
+            <div class="record-header">
+               <div class="record-back">
+                  <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_534)">
+                     <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_534">
+                     <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </div>
+               <div class="record-logo">
+                  <img src="img/logo.png" />
+               </div>
+               <div class="record-bell">
+                  <a href="tel::+79170000000">
+                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_536)">
+                        <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                        <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                        <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_536">
+                        <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="record-poster">
+               <div class="record-img record-img-min" style="background-image: url('img/linh-le-FYgnwFMZBM0-unsplash.jpg')"></div>
+               <div class="record-title text-center record-title-center">
+                  Отзывы
+               </div>
+            </div>
+            <ul class="record-tab record-tab-border">
+               <li><a href="#record-popup-store">Перейти к выбору дизайнера <img src="img/next.svg"></a></li>
+            </ul>
+            <div class="record-content">
+               <div class="record-content-block record-content-store-padding reviews-store-main">
+                  <div class="manager-block manager-block-main">
+                     <div class="manager-block-face">
+                        <img src="img/Vector.png" />
+                     </div>
+                     <div class="manager-block-info">
+                        <div class="manager-block-name">Бугрецов Владимир</div>
+                        <div class="manager-block-salon">Салон Тессер на Курской</div>
+                        <div class="manager-block-rating">
+                           <ul class="raiting-list">
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                                 </svg>
+                              </li>
+                              <li>
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                                 </svg>
+                              </li>
+                           </ul>
+
+                           <span class="raiting-count">45 (<a href="#">16 отзывов</a>)</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="record-content-choose-store record-content-button record-content-button-border record-content-button-background">
+                     Записаться к другому дизайнеру
+                  </div>
+                  <a href="#designer-assessment" class="record-content-choose-store record-content-button record-content-button-border record-content-button-border--xl js-hadler-btn">
+                     Оставить отзывы
+                  </a>
+               </div>
+               <div class="record-content-store-padding  reviews-store-feeds">
+                  <div class="reviews-count">Отзывы (16)</div>
+                  <div class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius reviews-item">
+                     <div class="reviews-item-head">
+                        <ul class="raiting-list">
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                              </svg>
+                           </li>
+                        </ul>
+
+
+                        <div class="reviews-date">30 Июля в 16:20</div>
+                     </div>
+
+                     <div class="reviews-item-body">
+                        <p>Владимир’ замечательный дизайнер и знающий сою работу консультант! Я не думала что так легко и правильно консультант может прочувствовать и показать именно тот вариант Ванной комнаты , который я хотела Видеть ‘ Спасибо Вам !!!</p>
+                     </div>
+                  </div>
+
+                  <div class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius reviews-item">
+                     <div class="reviews-item-head">
+                        <ul class="raiting-list">
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                              </svg>
+                           </li>
+                        </ul>
+
+
+                        <div class="reviews-date">30 Июля в 16:20</div>
+                     </div>
+
+                     <div class="reviews-item-body">
+                        <p>Владимир’ замечательный дизайнер и знающий сою работу консультант! Я не думала что так легко и правильно консультант может прочувствовать и показать именно тот вариант Ванной комнаты , который я хотела Видеть ‘ Спасибо Вам !!!</p>
+                     </div>
+                  </div>
+
+                  <div class="record-content-block record-content-block-box-shadow record-content-block-padding record-content-block-radius reviews-item">
+                     <div class="reviews-item-head">
+                        <ul class="raiting-list">
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#F0AF2D"/>
+                              </svg>
+                           </li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M6.91297 0.464146C6.71206 -0.154715 5.83652 -0.154715 5.63494 0.464146L4.61425 3.60482C4.57029 3.73964 4.4848 3.8571 4.37002 3.94038C4.25523 4.02366 4.11704 4.0685 3.97523 4.06846H0.673295C0.0228525 4.06846 -0.248613 4.90167 0.278191 5.28468L2.94984 7.22525C3.06461 7.30868 3.15002 7.4263 3.19383 7.56125C3.23765 7.6962 3.23762 7.84156 3.19376 7.97649L2.17375 11.1172C1.97216 11.736 2.68107 12.2514 3.2072 11.8684L5.87885 9.92782C5.99368 9.84434 6.13199 9.79938 6.27395 9.79938C6.41592 9.79938 6.55423 9.84434 6.66906 9.92782L9.34071 11.8684C9.86684 12.2514 10.5757 11.7367 10.3742 11.1172L9.35415 7.97649C9.31029 7.84156 9.31026 7.6962 9.35408 7.56125C9.39789 7.4263 9.4833 7.30868 9.59807 7.22525L12.2697 5.28468C12.7959 4.90167 12.5257 4.06846 11.8746 4.06846H8.57201C8.43031 4.06835 8.29227 4.02346 8.17762 3.94019C8.06297 3.85692 7.97758 3.73953 7.93366 3.60482L6.91297 0.464146Z" fill="#E0E0E0"/>
+                              </svg>
+                           </li>
+                        </ul>
+
+
+                        <div class="reviews-date">30 Июля в 16:20</div>
+                     </div>
+
+                     <div class="reviews-item-body">
+                        <p>Владимир’ замечательный дизайнер и знающий сою работу консультант! Я не думала что так легко и правильно консультант может прочувствовать и показать именно тот вариант Ванной комнаты , который я хотела Видеть ‘ Спасибо Вам !!!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- //// -->
+
+   
+
+
+
+<div class="record d-none" id="designer-assessment">
+   <span class="jqmClose">
+      <svg class="svg svg-close" width="14" height="14" viewBox="0 0 14 14">
+         <path data-name="Rounded Rectangle 568 copy 16" class="cls-1"
+            d="M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z"
+            transform="translate(-1001 -946)"></path>
+      </svg>
+   </span>
+
+
+   <div class="record-content-container">
+      <div class="record-content-container-inner">
+         <div class="record-header">
+            <div class="record-back">
+               <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2_534)">
+                  <path d="M27 13.023L4.50012 13.0229" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.4548 20.9779L4.49985 13.0229L12.4548 5.06804" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2_534">
+                  <rect width="27" height="27" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+            </div>
+            <div class="record-logo">
+               <img src="img/logo.png" />
+            </div>
+            <div class="record-bell">
+               <a href="tel::+79170000000">
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_2_536)">
+                     <path d="M19.643 14.993L16.7524 12.1011C16.3642 11.7149 15.8443 11.5021 15.2888 11.5021C14.7107 11.5021 14.1649 11.7297 13.7522 12.1427L12.627 13.2676C11.7526 12.7816 10.5905 12.1132 9.38396 10.9066C8.17882 9.70109 7.5103 8.54236 7.02182 7.66328L8.14812 6.53781C8.9855 5.69869 9.00263 4.35248 8.18643 3.53702L5.29634 0.646855C4.90922 0.258653 4.38938 0.0448608 3.83248 0.0448608C3.2673 0.0448608 2.73266 0.262459 2.32236 0.658521C2.07415 0.858413 0.828547 1.95799 0.36431 4.22564C-0.285672 7.39968 1.20773 10.4536 5.51899 14.7666C10.335 19.5811 14.4465 19.9553 15.5919 19.9553C15.8303 19.9553 15.9742 19.9406 16.0126 19.9361C18.2587 19.6729 19.0629 18.6754 19.6501 17.9471C20.4109 17.0031 20.4083 15.7611 19.643 14.993ZM18.6838 17.1681C18.1319 17.8527 17.6107 18.4992 15.8682 18.7034C15.8673 18.7035 15.772 18.7142 15.5919 18.7142C14.5671 18.7142 10.8752 18.3662 6.39658 13.889C2.42082 9.91157 1.02538 7.18398 1.58013 4.47451C1.98504 2.4966 3.06005 1.65591 3.10183 1.62398L3.13889 1.59659L3.17141 1.56399C3.35087 1.3847 3.58559 1.28592 3.8324 1.28592C4.05711 1.28592 4.26494 1.37014 4.41817 1.52387L7.30892 4.4147C7.64152 4.74697 7.62382 5.3061 7.26995 5.66071L5.99622 6.93337L5.97528 6.9553C5.64334 7.32091 5.68239 7.81502 5.86524 8.13678C6.39286 9.08892 7.11556 10.3929 8.50621 11.784C9.89222 13.17 11.1943 13.8921 12.1438 14.4187C12.2389 14.4721 12.4351 14.5616 12.6808 14.5616C12.9709 14.5616 13.2372 14.4389 13.4344 14.2151L14.6297 13.02C14.8082 12.8415 15.0422 12.7431 15.2887 12.7431C15.5139 12.7431 15.7228 12.8276 15.8757 12.9796L18.7644 15.8696C19.1314 16.2379 18.9799 16.8009 18.6838 17.1681Z" fill="white"/>
+                     <path d="M12.3354 3.08555C13.4016 3.20825 14.6571 3.85409 15.5337 4.73086C16.4186 5.61573 17.066 6.88392 17.1829 7.96173C17.2174 8.27969 17.4863 8.51533 17.7991 8.51533C17.8214 8.51533 17.8441 8.51409 17.8668 8.51169C18.2075 8.4747 18.4537 8.16858 18.4167 7.82787C18.2689 6.46544 17.5004 4.9425 16.4113 3.85335C15.3324 2.77438 13.8251 2.00782 12.4773 1.85269C12.137 1.81322 11.8291 2.05779 11.7899 2.39817C11.7507 2.73855 11.9948 3.04633 12.3354 3.08555Z" fill="white"/>
+                     <path d="M11.7556 5.68494C12.3323 5.75138 13.1304 6.17913 13.6532 6.70194C14.1805 7.22931 14.609 8.035 14.6722 8.61788C14.7067 8.93592 14.9756 9.17156 15.2883 9.17156C15.3107 9.17156 15.3332 9.17032 15.3559 9.16792C15.6966 9.13093 15.9429 8.82481 15.9059 8.4841C15.7981 7.48894 15.1374 6.43114 14.5306 5.82435C13.9293 5.22294 12.8818 4.56543 11.8975 4.45199C11.5567 4.41236 11.2493 4.65702 11.21 4.9974C11.1709 5.33786 11.4152 5.64572 11.7556 5.68494Z" fill="white"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2_536">
+                     <rect width="20" height="20" fill="white" transform="translate(0.21875)"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+               </a>
+            </div>
+         </div>
+         <div class="record-poster">
+            <div class="record-img record-img-min" style="background-image: url('img/linh-le-FYgnwFMZBM0-unsplash.jpg')"></div>
+            <div class="record-title text-center record-title-center">
+               Оцените работу дизайнера
+            </div>
+         </div>
+   
+         <div class="record-content">
+            <div class="record-content-store-padding designer-assessment-box">
+
+               <div class="manager-block manager-block-main manager-block--column">
+                  <div class="manager-block-face">
+                     <img src="img/Vector.png" />
+                  </div>
+                  <div class="manager-block-info">
+                     <div class="manager-block-name">Бугрецов Владимир</div>
+                     <div class="manager-block-salon">Салон Тессер на Курской</div>
+                  </div>
+               </div>
+               
+               
+
+               <div class="designer-assessment-handle js-designer-assessment-handle">
+                  <div class="designer-assessment-stars">
+                     <svg class="filled" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5665 1.61677C23.8736 -0.538925 20.854 -0.538925 20.1588 1.61677L16.6386 12.5568C16.487 13.0264 16.1922 13.4356 15.7963 13.7257C15.4004 14.0158 14.9239 14.1719 14.4348 14.1718H3.04696C0.803698 14.1718 -0.13254 17.0741 1.68432 18.4083L10.8984 25.168C11.2942 25.4586 11.5887 25.8683 11.7399 26.3384C11.891 26.8084 11.8909 27.3147 11.7396 27.7848L8.22176 38.7248C7.52653 40.8805 9.97141 42.6757 11.786 41.3416L21 34.5819C21.396 34.2911 21.8731 34.1345 22.3627 34.1345C22.8523 34.1345 23.3293 34.2911 23.7253 34.5819L32.9394 41.3416C34.7539 42.6757 37.1988 40.8828 36.5036 38.7248L32.9857 27.7848C32.8344 27.3147 32.8344 26.8084 32.9855 26.3384C33.1366 25.8683 33.4311 25.4586 33.8269 25.168L43.041 18.4083C44.8555 17.0741 43.9239 14.1718 41.6784 14.1718H30.2882C29.7995 14.1714 29.3235 14.015 28.9281 13.725C28.5327 13.4349 28.2382 13.026 28.0867 12.5568L24.5665 1.61677Z" fill="#F0AF2D"/>
+                     </svg>
+                     <svg class="filled" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5665 1.61677C23.8736 -0.538925 20.854 -0.538925 20.1588 1.61677L16.6386 12.5568C16.487 13.0264 16.1922 13.4356 15.7963 13.7257C15.4004 14.0158 14.9239 14.1719 14.4348 14.1718H3.04696C0.803698 14.1718 -0.13254 17.0741 1.68432 18.4083L10.8984 25.168C11.2942 25.4586 11.5887 25.8683 11.7399 26.3384C11.891 26.8084 11.8909 27.3147 11.7396 27.7848L8.22176 38.7248C7.52653 40.8805 9.97141 42.6757 11.786 41.3416L21 34.5819C21.396 34.2911 21.8731 34.1345 22.3627 34.1345C22.8523 34.1345 23.3293 34.2911 23.7253 34.5819L32.9394 41.3416C34.7539 42.6757 37.1988 40.8828 36.5036 38.7248L32.9857 27.7848C32.8344 27.3147 32.8344 26.8084 32.9855 26.3384C33.1366 25.8683 33.4311 25.4586 33.8269 25.168L43.041 18.4083C44.8555 17.0741 43.9239 14.1718 41.6784 14.1718H30.2882C29.7995 14.1714 29.3235 14.015 28.9281 13.725C28.5327 13.4349 28.2382 13.026 28.0867 12.5568L24.5665 1.61677Z" fill="#F0AF2D"/>
+                     </svg>
+                     <svg class="filled" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5665 1.61677C23.8736 -0.538925 20.854 -0.538925 20.1588 1.61677L16.6386 12.5568C16.487 13.0264 16.1922 13.4356 15.7963 13.7257C15.4004 14.0158 14.9239 14.1719 14.4348 14.1718H3.04696C0.803698 14.1718 -0.13254 17.0741 1.68432 18.4083L10.8984 25.168C11.2942 25.4586 11.5887 25.8683 11.7399 26.3384C11.891 26.8084 11.8909 27.3147 11.7396 27.7848L8.22176 38.7248C7.52653 40.8805 9.97141 42.6757 11.786 41.3416L21 34.5819C21.396 34.2911 21.8731 34.1345 22.3627 34.1345C22.8523 34.1345 23.3293 34.2911 23.7253 34.5819L32.9394 41.3416C34.7539 42.6757 37.1988 40.8828 36.5036 38.7248L32.9857 27.7848C32.8344 27.3147 32.8344 26.8084 32.9855 26.3384C33.1366 25.8683 33.4311 25.4586 33.8269 25.168L43.041 18.4083C44.8555 17.0741 43.9239 14.1718 41.6784 14.1718H30.2882C29.7995 14.1714 29.3235 14.015 28.9281 13.725C28.5327 13.4349 28.2382 13.026 28.0867 12.5568L24.5665 1.61677Z" fill="#F0AF2D"/>
+                     </svg>
+                     <svg class="filled" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5665 1.61677C23.8736 -0.538925 20.854 -0.538925 20.1588 1.61677L16.6386 12.5568C16.487 13.0264 16.1922 13.4356 15.7963 13.7257C15.4004 14.0158 14.9239 14.1719 14.4348 14.1718H3.04696C0.803698 14.1718 -0.13254 17.0741 1.68432 18.4083L10.8984 25.168C11.2942 25.4586 11.5887 25.8683 11.7399 26.3384C11.891 26.8084 11.8909 27.3147 11.7396 27.7848L8.22176 38.7248C7.52653 40.8805 9.97141 42.6757 11.786 41.3416L21 34.5819C21.396 34.2911 21.8731 34.1345 22.3627 34.1345C22.8523 34.1345 23.3293 34.2911 23.7253 34.5819L32.9394 41.3416C34.7539 42.6757 37.1988 40.8828 36.5036 38.7248L32.9857 27.7848C32.8344 27.3147 32.8344 26.8084 32.9855 26.3384C33.1366 25.8683 33.4311 25.4586 33.8269 25.168L43.041 18.4083C44.8555 17.0741 43.9239 14.1718 41.6784 14.1718H30.2882C29.7995 14.1714 29.3235 14.015 28.9281 13.725C28.5327 13.4349 28.2382 13.026 28.0867 12.5568L24.5665 1.61677Z" fill="#F0AF2D"/>
+                     </svg>
+                     <svg class="filled" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5665 1.61677C23.8736 -0.538925 20.854 -0.538925 20.1588 1.61677L16.6386 12.5568C16.487 13.0264 16.1922 13.4356 15.7963 13.7257C15.4004 14.0158 14.9239 14.1719 14.4348 14.1718H3.04696C0.803698 14.1718 -0.13254 17.0741 1.68432 18.4083L10.8984 25.168C11.2942 25.4586 11.5887 25.8683 11.7399 26.3384C11.891 26.8084 11.8909 27.3147 11.7396 27.7848L8.22176 38.7248C7.52653 40.8805 9.97141 42.6757 11.786 41.3416L21 34.5819C21.396 34.2911 21.8731 34.1345 22.3627 34.1345C22.8523 34.1345 23.3293 34.2911 23.7253 34.5819L32.9394 41.3416C34.7539 42.6757 37.1988 40.8828 36.5036 38.7248L32.9857 27.7848C32.8344 27.3147 32.8344 26.8084 32.9855 26.3384C33.1366 25.8683 33.4311 25.4586 33.8269 25.168L43.041 18.4083C44.8555 17.0741 43.9239 14.1718 41.6784 14.1718H30.2882C29.7995 14.1714 29.3235 14.015 28.9281 13.725C28.5327 13.4349 28.2382 13.026 28.0867 12.5568L24.5665 1.61677Z" fill="#F0AF2D"/>
+                     </svg>
+                  </div>
+
+
+                  <div class="designer-assesment-result js-designer-assesment-result">
+                     Отлично
+                  </div>
+               </div>
+
+            </div>
+
+
+
+            <div class="record-content-store-padding  reviews-store-feeds record-content-block place-review-box">
+               
+               
+               <form class="place-review">
+                  <div class="place-review-title">Оставьте отзыв</div>
+
+                  <div class="place-review-area">
+                     <textarea placeholder="Ваш комментарий"></textarea>
+                  </div>
+
+                  <button type="submit" class="form-submit-btn record-content-choose-store record-content-button record-content-button-border record-content-button-background">
+                     <span>Отправить</span>
+                  </button>
+               </form>
+               
+
+
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+<div class="modal-overlay popup-overlay" id="thanks-popup">
+
+   <div class="popup">
+      <div class="popup-title">Спасибо!</div>
+      <div class="popup-text">Отзыв отправлен и будет опубликован сразу после проверки на спам. </div>
+
+      <div class="record-content-choose-store record-content-button record-content-button-border  js-close-popup">
+         ОК
+      </div>
+
+   </div>
+
+</div>
+
+
+</body>
+
+
+
+
+</html>
